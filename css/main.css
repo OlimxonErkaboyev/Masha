@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vh;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.masha-message {
+  display: flex;
+  background-image: url(../images/photo_2022-11-14_11-19-05.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  perspective: 1800px;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+}
+
+.masha-message:hover .masha-left {
+  transform: rotateY(-140deg);
+  transition: transform 1s ease;
+}
+.masha-message:hover .masha-right {
+  transform: rotateY(160deg);
+  transition: transform 1s ease;
+}
+
+.masha-left {
+  background-color: aquamarine;
+  transform-origin: left;
+  transition: transform 1s ease;
+  width: 50%;
+  height: 100%;
+}
+.masha-right {
+  background-color: aquamarine;
+  transform-origin: right;
+  transition: transform 1s ease;
+  width: 50%;
+  height: 100%;
+}
